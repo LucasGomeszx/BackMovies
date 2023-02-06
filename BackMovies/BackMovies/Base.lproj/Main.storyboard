@@ -243,6 +243,112 @@
             </objects>
             <point key="canvasLocation" x="757.97101449275374" y="-4.6875"/>
         </scene>
+        <!--Recover View Controller-->
+        <scene sceneID="sBo-VZ-udy">
+            <objects>
+                <viewController id="V74-E6-DNB" customClass="RecoverViewController" customModule="BackMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ij-gy-OOY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinema_1" translatesAutoresizingMaskIntoConstraints="NO" id="zi9-x4-zYg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alterar Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdl-VO-daM">
+                                <rect key="frame" x="98.5" y="25" width="178.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nxn-dj-h0P">
+                                <rect key="frame" x="26" y="17" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="R0J-Lf-udC"/>
+                                    <constraint firstAttribute="height" constant="52.5" id="Y4q-JU-Uaj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xon-dg-iMp">
+                                <rect key="frame" x="26" y="94.5" width="323" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76h-ar-TBt">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TH-XE-iMQ">
+                                        <rect key="frame" x="0.0" y="40" width="323" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-kK-sC1">
+                                        <rect key="frame" x="0.0" y="90" width="323" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu cpf" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVH-ww-oMJ">
+                                        <rect key="frame" x="0.0" y="130" width="323" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-Nw-aMa">
+                                        <rect key="frame" x="0.0" y="180" width="323" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJZ-he-jrY">
+                                        <rect key="frame" x="0.0" y="220" width="323" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repita senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zY-hY-rud">
+                                        <rect key="frame" x="0.0" y="270" width="323" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita sua senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spG-lu-vQB">
+                                        <rect key="frame" x="0.0" y="310" width="323" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R48-nD-sIn">
+                                <rect key="frame" x="64" y="586" width="247" height="34.5"/>
+                                <color key="backgroundColor" red="0.45490196350000001" green="0.231372565" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alterar"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ad-v8-7JJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zi9-x4-zYg" firstAttribute="top" secondItem="7ij-gy-OOY" secondAttribute="top" id="7A0-gb-BJ2"/>
+                            <constraint firstItem="8ad-v8-7JJ" firstAttribute="trailing" secondItem="Xon-dg-iMp" secondAttribute="trailing" constant="26" id="Bzi-sg-j5x"/>
+                            <constraint firstItem="8ad-v8-7JJ" firstAttribute="trailing" secondItem="R48-nD-sIn" secondAttribute="trailing" constant="64" id="Fd1-Ay-m0C"/>
+                            <constraint firstAttribute="bottom" secondItem="zi9-x4-zYg" secondAttribute="bottom" id="IuT-pj-Q3X"/>
+                            <constraint firstItem="Nxn-dj-h0P" firstAttribute="top" secondItem="8ad-v8-7JJ" secondAttribute="top" constant="16" id="LsZ-oV-Uqv"/>
+                            <constraint firstItem="zi9-x4-zYg" firstAttribute="leading" secondItem="7ij-gy-OOY" secondAttribute="leading" id="MlG-3K-mmh"/>
+                            <constraint firstItem="8ad-v8-7JJ" firstAttribute="bottom" secondItem="R48-nD-sIn" secondAttribute="bottom" constant="46.5" id="aUR-DV-68s"/>
+                            <constraint firstAttribute="trailing" secondItem="zi9-x4-zYg" secondAttribute="trailing" id="aff-9B-0sQ"/>
+                            <constraint firstItem="Rdl-VO-daM" firstAttribute="centerX" secondItem="7ij-gy-OOY" secondAttribute="centerX" id="elr-db-U8P"/>
+                            <constraint firstItem="Xon-dg-iMp" firstAttribute="leading" secondItem="8ad-v8-7JJ" secondAttribute="leading" constant="26" id="iAm-Gf-ufy"/>
+                            <constraint firstItem="Nxn-dj-h0P" firstAttribute="leading" secondItem="8ad-v8-7JJ" secondAttribute="leading" constant="26" id="k19-TL-JbS"/>
+                            <constraint firstItem="R48-nD-sIn" firstAttribute="leading" secondItem="8ad-v8-7JJ" secondAttribute="leading" constant="64" id="nrD-PK-Z8G"/>
+                            <constraint firstItem="Rdl-VO-daM" firstAttribute="top" secondItem="8ad-v8-7JJ" secondAttribute="top" constant="25" id="oeM-qS-gvx"/>
+                            <constraint firstItem="Xon-dg-iMp" firstAttribute="top" secondItem="Nxn-dj-h0P" secondAttribute="bottom" constant="26" id="rrd-KI-c7e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eox-w0-PkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509.5999999999999" y="-4.0479760119940034"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Captura de Tela 2023-02-06 às 11.55.16" width="1234" height="432"/>
