@@ -1526,6 +1526,127 @@
             </objects>
             <point key="canvasLocation" x="6606" y="-10"/>
         </scene>
+        <!--Search Selected View Controller-->
+        <scene sceneID="PaT-5t-Vaa">
+            <objects>
+                <viewController id="UOJ-aI-qFd" customClass="SearchSelectedViewController" customModule="BackMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2k-7O-6RG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-lo-8wS">
+                                <rect key="frame" x="16" y="17" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="B27-1m-odp"/>
+                                    <constraint firstAttribute="height" constant="52.5" id="muR-hz-ENi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Selecionado)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-W7-4sF">
+                                <rect key="frame" x="82.5" y="16" width="210" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6X-yx-ofW">
+                                <rect key="frame" x="16" y="71" width="343" height="580"/>
+                                <subviews>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui ." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvg-67-udk">
+                                        <rect key="frame" x="16" y="16" width="311" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-DT-Kri">
+                                        <rect key="frame" x="16" y="66" width="311" height="498"/>
+                                        <color key="backgroundColor" red="0.91687469749999995" green="0.98710713139999995" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zh4-i8-Mui">
+                                            <size key="itemSize" width="135" height="200"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="15" minY="5" maxX="15" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cQP-Mh-tRg">
+                                                <rect key="frame" x="15" y="5" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aQb-yi-eQz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NdG-Xk-OLm">
+                                                <rect key="frame" x="161" y="5" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mc0-rx-SIS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1iE-Ih-d1b">
+                                                <rect key="frame" x="15" y="215" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yXJ-5q-7Dm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6XK-yE-0IR">
+                                                <rect key="frame" x="161" y="215" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jKT-rh-1VA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0VK-EA-sFV">
+                                                <rect key="frame" x="15" y="425" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qm1-pp-eSF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8HC-nb-9uI">
+                                                <rect key="frame" x="161" y="425" width="135" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XgD-Qy-nqN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="g5E-DT-Kri" firstAttribute="top" secondItem="Dvg-67-udk" secondAttribute="bottom" constant="16" id="7YZ-TU-zX2"/>
+                                    <constraint firstItem="Dvg-67-udk" firstAttribute="leading" secondItem="c6X-yx-ofW" secondAttribute="leading" constant="16" id="QPp-eP-Aob"/>
+                                    <constraint firstItem="g5E-DT-Kri" firstAttribute="leading" secondItem="c6X-yx-ofW" secondAttribute="leading" constant="16" id="WfN-lU-09U"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dvg-67-udk" secondAttribute="trailing" constant="16" id="an2-3Y-VTm"/>
+                                    <constraint firstItem="Dvg-67-udk" firstAttribute="top" secondItem="c6X-yx-ofW" secondAttribute="top" constant="16" id="gVf-BW-hNy"/>
+                                    <constraint firstAttribute="bottom" secondItem="g5E-DT-Kri" secondAttribute="bottom" constant="16" id="gph-xg-KjA"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5E-DT-Kri" secondAttribute="trailing" constant="16" id="m8y-bu-lvi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v3A-dS-cRo"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lJD-W7-4sF" firstAttribute="centerX" secondItem="T2k-7O-6RG" secondAttribute="centerX" id="8Q5-98-PFF"/>
+                            <constraint firstItem="v3A-dS-cRo" firstAttribute="bottom" secondItem="c6X-yx-ofW" secondAttribute="bottom" constant="16" id="AaM-0n-C5V"/>
+                            <constraint firstItem="RsH-lo-8wS" firstAttribute="leading" secondItem="v3A-dS-cRo" secondAttribute="leading" constant="16" id="HIb-5M-dcM"/>
+                            <constraint firstItem="lJD-W7-4sF" firstAttribute="top" secondItem="v3A-dS-cRo" secondAttribute="top" constant="16" id="NNR-oR-oxj"/>
+                            <constraint firstItem="RsH-lo-8wS" firstAttribute="top" secondItem="v3A-dS-cRo" secondAttribute="top" constant="16" id="SjI-Fk-Ufd"/>
+                            <constraint firstItem="c6X-yx-ofW" firstAttribute="top" secondItem="lJD-W7-4sF" secondAttribute="bottom" constant="16" id="cv4-ve-mxi"/>
+                            <constraint firstItem="v3A-dS-cRo" firstAttribute="trailing" secondItem="c6X-yx-ofW" secondAttribute="trailing" constant="16" id="i3g-6Q-kyH"/>
+                            <constraint firstItem="c6X-yx-ofW" firstAttribute="leading" secondItem="v3A-dS-cRo" secondAttribute="leading" constant="16" id="wzu-7e-J90"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHI-8i-AL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7278" y="-10"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Captura de Tela 2023-02-06 às 11.55.16" width="1234" height="432"/>

@@ -23,6 +23,7 @@
 		647AEEFC299188DA00D119D3 /* RecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AEEFB299188DA00D119D3 /* RecoverViewController.swift */; };
 		6491FEF92992EE6200DD1B8C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491FEF82992EE6200DD1B8C /* MovieDetailsViewController.swift */; };
 		6491FEFC2993009E00DD1B8C /* ActorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491FEFB2993009E00DD1B8C /* ActorDetailsViewController.swift */; };
+		6491FEFF2993041800DD1B8C /* SearchSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491FEFE2993041800DD1B8C /* SearchSelectedViewController.swift */; };
 		64E302F5299167B700709726 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E302F4299167B700709726 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		647AEEFB299188DA00D119D3 /* RecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverViewController.swift; sourceTree = "<group>"; };
 		6491FEF82992EE6200DD1B8C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		6491FEFB2993009E00DD1B8C /* ActorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorDetailsViewController.swift; sourceTree = "<group>"; };
+		6491FEFE2993041800DD1B8C /* SearchSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSelectedViewController.swift; sourceTree = "<group>"; };
 		64E302F4299167B700709726 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 				643EB37A2991F850004B619D /* Profile */,
 				6491FEF72992EE0700DD1B8C /* MovieDetails */,
 				6491FEFA2993007E00DD1B8C /* ActorDetails */,
+				6491FEFD299303EB00DD1B8C /* SearchSelected */,
 				6473B0D02989CBBF005BA1A6 /* Main.storyboard */,
 				6473B0D32989CBC0005BA1A6 /* Assets.xcassets */,
 				6473B0D52989CBC0005BA1A6 /* LaunchScreen.storyboard */,
@@ -178,6 +181,14 @@
 				6491FEFB2993009E00DD1B8C /* ActorDetailsViewController.swift */,
 			);
 			path = ActorDetails;
+			sourceTree = "<group>";
+		};
+		6491FEFD299303EB00DD1B8C /* SearchSelected */ = {
+			isa = PBXGroup;
+			children = (
+				6491FEFE2993041800DD1B8C /* SearchSelectedViewController.swift */,
+			);
+			path = SearchSelected;
 			sourceTree = "<group>";
 		};
 		64E302F22991675E00709726 /* Login */ = {
@@ -277,6 +288,7 @@
 				643EB3822991F927004B619D /* FavoriteViewController.swift in Sources */,
 				6473B0CD2989CBBF005BA1A6 /* SceneDelegate.swift in Sources */,
 				647AEEFC299188DA00D119D3 /* RecoverViewController.swift in Sources */,
+				6491FEFF2993041800DD1B8C /* SearchSelectedViewController.swift in Sources */,
 				6491FEF92992EE6200DD1B8C /* MovieDetailsViewController.swift in Sources */,
 				644CAA5629920977009158D1 /* MovieCollectionViewCell.swift in Sources */,
 				643EB37C2991F8BF004B619D /* TabBarViewController.swift in Sources */,
