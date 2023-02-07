@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -627,24 +628,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-CB-ymM">
-                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-CB-ymM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-0g-WkR">
+                                <rect key="frame" x="132" y="72" width="150" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto" translatesAutoresizingMaskIntoConstraints="NO" id="Vby-1h-QW6">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yh1-ce-Zyt">
+                                        <rect key="frame" x="135" y="126" width="25" height="25"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="b3M-wT-EWU"/>
+                                            <constraint firstAttribute="height" constant="23.5" id="tUt-8d-Bdn"/>
+                                        </constraints>
+                                        <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91687469749999995" green="0.98710713139999995" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Vby-1h-QW6" firstAttribute="top" secondItem="2Xe-0g-WkR" secondAttribute="top" id="R7K-n8-JZq"/>
+                                    <constraint firstAttribute="bottom" secondItem="yh1-ce-Zyt" secondAttribute="bottom" id="UNk-S6-yfs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vby-1h-QW6" secondAttribute="trailing" id="VZp-Ry-pON"/>
+                                    <constraint firstAttribute="trailing" secondItem="yh1-ce-Zyt" secondAttribute="trailing" constant="-10" id="Waq-d7-BpM"/>
+                                    <constraint firstAttribute="width" constant="150" id="a5n-YI-NpR"/>
+                                    <constraint firstItem="Vby-1h-QW6" firstAttribute="leading" secondItem="2Xe-0g-WkR" secondAttribute="leading" id="f9h-qQ-PaM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vby-1h-QW6" secondAttribute="bottom" id="lFV-TL-uqe"/>
+                                    <constraint firstAttribute="height" constant="150" id="ntP-bq-sKR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucas Gomes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJk-AE-ywz">
+                                <rect key="frame" x="118.5" y="246" width="177" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-ot-eHG">
+                                <rect key="frame" x="32" y="324" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lgomeszx@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJx-Kq-0kj">
+                                <rect key="frame" x="32" y="360" width="185" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55N-3A-So1">
+                                <rect key="frame" x="83.5" y="762.5" width="247" height="34.5"/>
+                                <color key="backgroundColor" red="0.45490196350000001" green="0.231372565" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="83K-De-s6l"/>
+                                    <constraint firstAttribute="height" constant="34.5" id="Ars-CY-ptb"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sair"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vhw-lw-HKV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2Xe-0g-WkR" firstAttribute="centerX" secondItem="BTC-gC-kif" secondAttribute="centerX" id="1W4-Ao-oWb"/>
+                            <constraint firstItem="yJk-AE-ywz" firstAttribute="centerX" secondItem="Vby-1h-QW6" secondAttribute="centerX" id="9L9-Vb-sPt"/>
+                            <constraint firstItem="Chq-ot-eHG" firstAttribute="leading" secondItem="vhw-lw-HKV" secondAttribute="leading" constant="32" id="IQn-xt-10U"/>
+                            <constraint firstItem="cJx-Kq-0kj" firstAttribute="top" secondItem="Chq-ot-eHG" secondAttribute="bottom" constant="12" id="KQQ-L8-M2g"/>
+                            <constraint firstItem="vhw-lw-HKV" firstAttribute="bottom" secondItem="55N-3A-So1" secondAttribute="bottom" constant="16" id="NuS-7z-a3e"/>
+                            <constraint firstItem="55N-3A-So1" firstAttribute="centerX" secondItem="BTC-gC-kif" secondAttribute="centerX" id="Tl4-5Y-Cxh"/>
                             <constraint firstItem="KEP-CB-ymM" firstAttribute="leading" secondItem="vhw-lw-HKV" secondAttribute="leading" id="ZZ2-LA-YSE"/>
+                            <constraint firstItem="Chq-ot-eHG" firstAttribute="top" secondItem="yJk-AE-ywz" secondAttribute="bottom" constant="44" id="bDk-hp-dK2"/>
+                            <constraint firstItem="KEP-CB-ymM" firstAttribute="top" secondItem="BTC-gC-kif" secondAttribute="top" id="cCB-RV-SnV"/>
+                            <constraint firstItem="yJk-AE-ywz" firstAttribute="top" secondItem="2Xe-0g-WkR" secondAttribute="bottom" constant="24" id="hsd-Wa-Hro"/>
                             <constraint firstAttribute="bottom" secondItem="KEP-CB-ymM" secondAttribute="bottom" id="iCi-jZ-eiP"/>
+                            <constraint firstItem="cJx-Kq-0kj" firstAttribute="leading" secondItem="vhw-lw-HKV" secondAttribute="leading" constant="32" id="p8h-kD-Xyp"/>
                             <constraint firstItem="KEP-CB-ymM" firstAttribute="trailing" secondItem="vhw-lw-HKV" secondAttribute="trailing" id="qV4-Bo-yB6"/>
-                            <constraint firstItem="KEP-CB-ymM" firstAttribute="top" secondItem="BTC-gC-kif" secondAttribute="topMargin" id="qt9-ip-g7Y"/>
+                            <constraint firstItem="2Xe-0g-WkR" firstAttribute="top" secondItem="vhw-lw-HKV" secondAttribute="top" constant="24" id="rbe-tx-gVz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" selectedImage="person" catalog="system" id="5JZ-Qm-32R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmZ-CO-jIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5213.6000000000004" y="-8.5457271364317844"/>
+            <point key="canvasLocation" x="5212" y="-9.4452773613193415"/>
         </scene>
         <!--Cartaz-->
         <scene sceneID="IP1-Ow-XWZ">
@@ -782,10 +850,13 @@
         <image name="Cinema_1" width="675" height="1500"/>
         <image name="appleid" width="1280" height="853"/>
         <image name="arrowshape.backward" catalog="system" width="128" height="104"/>
+        <image name="foto" width="1920" height="1080"/>
         <image name="googlelog" width="236" height="236"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="image" width="675" height="1500"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
